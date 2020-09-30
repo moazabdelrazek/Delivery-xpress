@@ -1,0 +1,32 @@
+/* Start style header */
+header {
+    .text {
+        margin-bottom: 50px;
+        h2 {
+            font-size: 72px;
+            margin-top: 150px;
+        }
+        p {
+            margin: 40px 0;
+            font-size: 20px;
+        }
+        button {
+            background: none;
+            padding: 5px 30px;
+            border: 1px solid;
+            // use mixin sass
+            @include browser(border-radius, 25px, o ms moz webkit);
+        }
+    }
+    .img {
+        position: relative;
+        img {
+            left: -50px;
+            bottom: 0;
+            height: auto;
+            max-width: 100%;
+            position: absolute;
+        }
+    }
+}
+/* End style header */

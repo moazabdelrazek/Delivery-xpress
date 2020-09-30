@@ -1,0 +1,33 @@
+/* start edit class bootstrap 4 */
+.navbar-brand {
+    position: relative;
+}
+.navbar-brand .bg-body {
+    top: -100px;
+    opacity: .2;
+    right: -115px;
+    max-width: 700px;
+    position: absolute;
+}
+.nav-item .nav-link {
+    color: #000;
+}
+.nav-item:not(:last-of-type)  {
+    padding: 0 40px 0 0;
+}
+.nav-item:last-of-type {
+    padding: 0px 25px;    
+    border-radius: 25px;
+    background-color: #48D864;
+}
+.nav-item:last-of-type {
+    box-shadow: 1px 6px 11px -6px #48d864;
+    -o-box-shadow: 1px 6px 11px -6px #48d864;
+    -ms-box-shadow: 1px 6px 11px -6px #48d864;
+    -moz-box-shadow: 1px 6px 11px -6px #48d864;
+    -webkit-box-shadow: 1px 6px 11px -6px #48d864;
+}
+.nav-item:last-of-type a {
+    color: #fff;
+    font-size: 13px;
+}

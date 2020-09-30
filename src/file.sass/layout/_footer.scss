@@ -1,0 +1,8 @@
+/* Start style footer */
+footer {
+    padding: 75px 85px;
+    background-color: #FAFAFA;
+    // use mixin sass
+    @include browser(border-radius, 270px 270px 0 0, o ms moz webkit);
+}
+/* End style footer */

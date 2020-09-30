@@ -1,0 +1,81 @@
+/* Start media query */
+
+/* start max width 991px */
+@media (max-width: 991px) {
+    .bg-body {
+        top: -80px !important;
+        right: -33px !important;        
+        max-width: 555px  !important;
+    }
+    .nav-item:not(:last-of-type) {
+        padding: 0 10px 0 0;
+    }
+    .professional .bg-professional {
+        top: 0 !important;
+    }    
+}
+/* end max width 991px */
+
+/* start min 767px to max 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+    .servers {
+        background-size: 100% !important;
+    }
+}
+/* end min 767px to max 991px */
+
+/* start max width 767px */
+@media (max-width: 767px) {
+    .servers {
+        background-size: 200%
+    }
+    .business {
+        // use mixin sass
+        @include browser(border-radius, 0, o ms moz webkit); 
+    }
+    .professional .cont {
+        // use mixin sass
+        @include browser(transform, translate(0, 0) !important, o ms moz webkit); 
+    }
+    .deliver .cont {
+        // use mixin sass
+        @include browser(transform, translate(0, 0) !important, o ms moz webkit); 
+    }
+    .contact-us .row .contact-info {
+        &::after {
+            left: 3px;
+        }
+        &::before {
+            top: 15px;
+            left: 49px;
+        }        
+        .container-el ul {
+            word-break: normal;
+        }
+    }
+}
+/* end max width 767px */
+
+/* start max width 575px */
+@media (max-width: 575px) {
+    body {
+        background-size: auto !important;
+    }
+    .bg-body {
+        top: -50px !important;
+        right: -40px !important;
+        max-width: 485px !important;        
+    }
+}
+/* end max width 575px */
+
+/* start max width 320px */
+@media (max-width: 340px) {
+    .servers  .container-el {
+        width: 290px !important;
+        height: 290px !important;
+    }
+}
+/* end max width 320px */
+
+/* End media query */
