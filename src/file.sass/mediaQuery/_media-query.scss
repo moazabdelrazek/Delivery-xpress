@@ -53,6 +53,14 @@
             word-break: normal;
         }
     }
+    footer {
+        padding: 20px 25px !important;
+        // use mixin sass
+        @include browser(border-radius, 0 !important, o ms moz webkit);
+        .subscribe form {
+            width: 100% !important;
+        }
+    }
 }
 /* end max width 767px */
 
@@ -68,6 +76,15 @@
     }
 }
 /* end max width 575px */
+
+/* start max width 320px */
+// @media (max-width: 480px) {
+//     .servers  .container-el {
+//         width: 290px !important;
+//         height: 290px !important;
+//     }
+// }
+/* end max width 320px */
 
 /* start max width 320px */
 @media (max-width: 340px) {

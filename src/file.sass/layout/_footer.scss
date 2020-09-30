@@ -1,8 +1,106 @@
 /* Start style footer */
 footer {
-    padding: 75px 85px;
+    padding: 75px 85px 25px 85px;
     background-color: #FAFAFA;
     // use mixin sass
     @include browser(border-radius, 270px 270px 0 0, o ms moz webkit);
+    .info {
+        .cont {
+            margin-bottom: 80px;
+            img {
+                height: auto;
+                max-width: 100%;
+            }
+        }
+        .cpy span {
+            font-size: 15px;
+        }
+        ul {
+            padding: 0;
+            list-style: none;
+            margin: 20px 0 0 0;
+            li {
+                width: 55px;
+                height: 54px;
+                color: #000;
+                cursor: pointer;
+                line-height: 54px;     
+                text-align: center;
+                display: inline-block;
+                background: #EBEBEB;
+                // use mixin sass
+                @include browser(border-radius, 33px, o ms moz webkit);
+                @include browser(transition, background-color .3s ease-in-out, o ms moz webkit);
+                &:hover {
+                    background-color: #9EFFB1;
+                }
+                i {
+                    font-size: 30px;
+                    vertical-align: middle;
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .links {
+        h3 {
+            font-weight: 700;
+            letter-spacing: 2px;            
+            margin-bottom: 60px;
+        }
+        .container-ul {
+            // use flex box
+            display: flex;
+            flex-wrap: wrap;
+            ul {
+                padding: 0;
+                list-style: none;
+                &:first-of-type {
+                    margin-right: 60px;
+                }
+                li {
+                    &:not(:last-of-type) {
+                        margin-bottom: 10px;
+                    }
+                    a {
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .subscribe {
+        h3 {
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 60px;
+        }
+        form {
+            width: 60%;            
+            display: inline-block;
+            .form-group {
+                label {
+                    margin-bottom: 15px;
+                }
+                input {
+                    padding: 20px 10px;                    
+                    border: 5px solid #000;
+                    // use mixin sass
+                    @include browser(border-radius, 31px, o ms moz webkit);                    
+                }
+            }
+            button {
+                width: 100%;
+                color: #fff;
+                display: block;
+                padding: 10px 0px;
+                background: #000;
+                @include browser(border-radius, 31px, o ms moz webkit); 
+            }
+        } 
+    }
 }
 /* End style footer */
